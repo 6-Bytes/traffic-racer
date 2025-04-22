@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F1 Flappy Style Game</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto;
+      background: #222;
+      border: 2px solid #fff;
+    }
+#pauseBtn {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+  </style>
+</head>
+<body>
+  <canvas id="game" width="400" height="600"></canvas>
+  <button id="pauseBtn">⏸ Pause</button>
+  <script src="game.js"></script>
+</body>
+</html>
